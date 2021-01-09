@@ -18,11 +18,11 @@ I quantified the performance of the stocks by:
 
 **Trading Activity**
   - DAQO stock (DQ) had the lowest trading volume among all the green energy stocks as shown below (The stocks are sorted by highest to lowest trading value):
-  <img src ="https://github.com/Kee2u/Stock-Analysis/blob/main/resources/2017%20Stock%20Performance%20by%20daily%20volume.png?raw=true" width = "400">
+  <img src ="https://github.com/Kee2u/Stock-Analysis/blob/main/README%20Images/2017%20Stock%20Performance%20by%20daily%20volume.png?raw=true" width = "400">
 
 **Yearly Return**
   - However, DAQO had the highest yearly return (The stocks are sorted by highest to lowest return):
-  <img src ="https://github.com/Kee2u/Stock-Analysis/blob/main/resources/2017%20Stock%20Performance%20sorted%20by%20return.png?raw=true" width = "400">
+  <img src ="https://github.com/Kee2u/Stock-Analysis/blob/main/README%20Images/2017%20Stock%20Performance%20sorted%20by%20return.png?raw=true" width = "400">
 
 Overall 2017 was a good year for clean energy with most stocks exhibiting a positive yearly return.
 
@@ -32,11 +32,11 @@ Note that these results show that trading volume is not a good indication of the
 
 **Trading Activity**
   - DAQO stock had the third lowest trading volume as shown below (The stocks are sorted by highest to lowest trading value):
-  <img src ="https://github.com/Kee2u/Stock-Analysis/blob/main/resources/2018%20Stock%20Performance%20by%20daily%20volume.png?raw=true" width = "400">
+  <img src ="https://github.com/Kee2u/Stock-Analysis/blob/main/README%20Images/2018%20Stock%20Performance%20by%20daily%20volume.png?raw=true" width = "400">
 
 **Yearly Return**
   - This year, DQ stock had the lowest return (The stocks are sorted by highest to lowest return):
-  <img src ="https://github.com/Kee2u/Stock-Analysis/blob/main/resources/2017%20Stock%20Performance%20sorted%20by%20return.png?raw=true" width = "400">
+  <img src ="https://github.com/Kee2u/Stock-Analysis/blob/main/README%20Images/2018%20Stock%20Performance%20by%20return.png?raw=true" width = "400">
 
 Overall 2018 was a bad year for clear energy stocks with most stocks exhibiting a negative return.
 
@@ -98,7 +98,7 @@ Initially, I approached this problem by creating nested for loops to go through 
 **Computation Time**
   - The computation time for this code was 0.99s for 2017 and 0.81s for 2018:
 
-<img src = "https://github.com/Kee2u/Stock-Analysis/blob/main/resources/Green_Stocks_2017.PNG?raw=true" width = "300">   <img src = "https://github.com/Kee2u/Stock-Analysis/blob/main/resources/Green_Stocks_2018.PNG?raw=true" width = "283">
+<img src = "https://github.com/Kee2u/Stock-Analysis/blob/main/README%20Images/Green_Stocks_2017.PNG?raw=true" width = "300">   <img src = "https://github.com/Kee2u/Stock-Analysis/blob/main/README%20Images/Green_Stocks_2018.PNG?raw=true" width = "283">
 
 ### Refactored Code  
 
