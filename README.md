@@ -17,12 +17,12 @@ I quantified the performance of the stocks by:
 ### 2017 performance
 
 **Trading Activity**
-DAQO stock had the lowest trading volume among all the green energy stocks as shown below:
-<img src ="https://github.com/Kee2u/Stock-Analysis/blob/main/resources/2017%20Stock%20Performance%20by%20daily%20volume.png?raw=true" width = "400">
+  - DAQO stock had the lowest trading volume among all the green energy stocks as shown below:
+  <img src ="https://github.com/Kee2u/Stock-Analysis/blob/main/resources/2017%20Stock%20Performance%20by%20daily%20volume.png?raw=true" width = "400">
 
 **Yearly Return**
-However, DAQO had the highest yearly return:
-<img src ="https://github.com/Kee2u/Stock-Analysis/blob/main/resources/2017%20Stock%20Performance%20sorted%20by%20return.png?raw=true" width = "400">
+  - However, DAQO had the highest yearly return:
+  <img src ="https://github.com/Kee2u/Stock-Analysis/blob/main/resources/2017%20Stock%20Performance%20sorted%20by%20return.png?raw=true" width = "400">
 
 This shows that trading volume is not a good indication of a the yearly return of a stock. Just because a stock's trading volume is high doesnt mean its return will be good. TERP's trading volume was higher than DQ's but it had a negative return.
 
