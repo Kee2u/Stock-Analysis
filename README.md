@@ -3,7 +3,7 @@
 ## Overview of Project
 Steve is a recent finance graduate whose parents have invested in DAQO New Energy Corporation stocks. The goal of this project was to measure the stocks performance as well as to look into other clean energy stocks to diversify their portfolio.
 
-I analyzed the stocks based on their past perfomance during 2017 and 2018. These were the metrics I used to measure performance:    
+I analyzed the stocks based on their past performance during 2017 and 2018. These were the metrics I used to measure performance:    
   - How actively were they traded in the past?
   - What were their yearly returns? (percentage change in price over 1 year.)
 
@@ -26,7 +26,7 @@ I quantified the performance of the stocks by:
 
 Overall 2017 was a good year for clean energy with most stocks exhibiting a positive yearly return.
 
-Note that these results show that trading volume is not a good indication of a the yearly return of a stock. A stock's high trading volume doesnt imply a good return. TERP's trading volume was higher than DQ's but it had a negative return.
+Note that these results show that trading volume is not a good indication of the yearly return of a stock. A stock's high trading volume doesn't imply a good return. TERP's trading volume was higher than DQ's but it had a negative return.
 
 ### 2018 performance
 
@@ -46,7 +46,7 @@ These results also show that past performance does not imply future success. Man
 
 Initially, I approached this problem by making an array for the tickers ( tickers(12) ). Then I created nested for loops to first go through all the rows in the table and perform the calculations for one ticker. Then it went to the next ticker and went through all the rows again. 
 
-**Here is the code I used. The values of the ticker array was initalized with the values of all 12 tickers before these lines:**
+**Here is the code I used. The values of the ticker array was initialized with the values of all 12 tickers before these lines:**
   
           'Loop through the tickers
              
@@ -96,7 +96,7 @@ Initially, I approached this problem by making an array for the tickers ( ticker
           Next i
 
 **Computation Time**
-  The computation time for this code was 0.99s for 2017 and 0.8s for 2018:
+  - The computation time for this code was 0.99s for 2017 and 0.81s for 2018:
 
 <img src = "https://github.com/Kee2u/Stock-Analysis/blob/main/resources/Green_Stocks_2017.PNG?raw=true" width = "300">   <img src = "https://github.com/Kee2u/Stock-Analysis/blob/main/resources/Green_Stocks_2018.PNG?raw=true" width = "283">
 
@@ -107,7 +107,7 @@ I did this by updating the ticker once the code detected the ending price of the
 
 In addition to creating an array for the ticker index like before, I created arrays for ticker volumes, starting price and ending price.
 
-**Here is the code I used. The values of the ticker array was initalized with the values of all 12 tickers before these lines:**
+**Here is the code I used. The values of the ticker array was initialized with the values of all 12 tickers before these lines:**
   
     'Create a ticker Index
     
@@ -170,4 +170,23 @@ In addition to creating an array for the ticker index like before, I created arr
         
     Next i
     
+**Computation Time**
+  - The computation time for this code was 0.42s for 2017 and 0.40s for 2018. The refactored code is faster than the original code.:
 
+<img src = "https://github.com/Kee2u/Stock-Analysis/blob/main/resources/VBA_Challenge_2017.png?raw=true" width = "300">   <img src = "https://github.com/Kee2u/Stock-Analysis/blob/main/resources/VBA_Challenge_2018.png?raw=true" width = "290">
+
+## Code Summary
+
+Refactoring code restructures and optimizes code without changing its behaviour.
+
+Depending on the approach, its advantages can be:
+ - To improve Maintainability
+ - To increase performance by decreasing computation speed
+ - To create extensible code (makes it easier to add more functions)
+ 
+It disadvantages are:
+ - It is time consuming because it entails reworking existing code
+ - It may introduce code bugs
+ 
+ In our case, the advantage of refactoring the code is decreasing computational speed. 
+ The disadvantage is that it consumed more memory by storing more data in arrays than the original code. The original code used variables that updated their value. This may lead to a bug. 
