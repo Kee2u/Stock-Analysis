@@ -4,19 +4,15 @@
 Steve is a recent finance graduate whose parents have invested in DAQO energy stock. The goal of this project was to see how well the stock compared to other clean energy stocks. 
 
 I analyzed the stocks based on their past perfomance during 2017 and 2018. These were the metrics I used to measure performance:    
-
- 1. How actively were they traded in the past?
- 2. What were their yearly returns? (percentage change in price over 1 year.)
+  - How actively were they traded in the past?
+  - What were their yearly returns? (percentage change in price over 1 year.)
 
 
 ## Results
-I used VBA in excel to calculate trading activity and yearly returns. The dataset I used included two sheets for the years 2017 and 2018. The data included 12 clean energy stocks and was organized using these categories:
-
-<img src = "https://github.com/Kee2u/Stock-Analysis/blob/main/resources/Categories.png?raw=true" width = "500">
-
+I used VBA in excel to calculate trading activity and yearly returns. The dataset I used included two sheets for the years 2017 and 2018. The data included 12 clean energy stocks and was organized by categories such as ticker name, date, closing amount and volume.
 I quantified the performance of the stocks by:
-1. Calculating trading activity for each stock (ticker) by adding their daily volume amounts.
-2. Calculating yearly returns for each stock(ticker) by calculating the percentage change in price over the year. I used the starting and ending closing price for this calculation.
+  - Calculating trading activity for each stock (ticker) by adding their daily volume amounts.
+  - Calculating yearly returns for each stock(ticker) by calculating the percentage change in price over the year. I used the starting and ending closing price for this calculation.
 
 ### 2017 performance
 
