@@ -38,15 +38,15 @@ Note that these results show that trading volume is not a good indication of the
   - This year, DQ stock had the lowest return (The stocks are sorted by highest to lowest return):
   <img src ="https://github.com/Kee2u/Stock-Analysis/blob/main/resources/2017%20Stock%20Performance%20sorted%20by%20return.png?raw=true" width = "400">
 
-Overall 2018 was a bad year for clear energy stocks with all except two stocks exhibiting a negative return.
+Overall 2018 was a bad year for clear energy stocks with most stocks exhibiting a negative return.
 
-These results also show that past performance does not imply future success. Many stocks that did well in 2017, did poorly in 2018.
+These results also show that past performance does not imply future success. Many stocks did well in 2017 but did poorly in 2018.
 
 ### Original Code
 
-Initially, I approached this problem by making an array for the tickers ( tickers(12) ). Then I created nested for loops to first go through all the rows in the table and perform the calculations for one ticker. Then it went to the next ticker and went through all the rows again. 
+Initially, I approached this problem by creating nested for loops to go through all the rows in the table and perform the calculations for one ticker. Then it updated the ticker and went through all the rows again. 
 
-**Here is the code I used. The values of the ticker array was initialized with the values of all 12 tickers before these lines:**
+**Here is the code I used. The values of the ticker array were initialized with the values of all 12 tickers before these lines:**
   
           'Loop through the tickers
              
@@ -102,12 +102,12 @@ Initially, I approached this problem by making an array for the tickers ( ticker
 
 ### Refactored Code  
 
-I then refactored the code to make it more efficient. Previously, the  code went through all the rows 12 times for each ticker. This time the code ran through the rows only once and updated the ticker as it went along. 
+I then refactored the code to make it more efficient. Previously, the code went through all the rows 12 times for each ticker. This time the code ran through the rows only once and updated the ticker as it went along. 
 I did this by updating the ticker once the code detected the ending price of the current ticker. This was possible because the rows were sorted chronologically: The ending price of one ticker was immediately before the starting price of the next as the code looped through the rows.
 
 In addition to creating an array for the ticker index like before, I created arrays for ticker volumes, starting price and ending price.
 
-**Here is the code I used. The values of the ticker array was initialized with the values of all 12 tickers before these lines:**
+**Here is the code I used. The values of the ticker array were initialized with the values of all 12 tickers before these lines:**
   
     'Create a ticker Index
     
@@ -189,4 +189,4 @@ It disadvantages are:
  - It may introduce code bugs
  
  In our case, the advantage of refactoring the code is decreasing computational speed. 
- The disadvantage is that it consumed more memory by storing more data in arrays than the original code. The original code used variables that updated their value. This may lead to a bug. 
+ The disadvantage is that it consumed more memory by storing more data in arrays than the original code. In contrast, the original code used variables that updated their value. 
