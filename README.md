@@ -8,19 +8,22 @@ I analyzed the stocks based on their past perfomance during 2017 and 2018. These
  1. How actively were they traded in the past?
  2. What were their yearly returns? (percentage change in price over 1 year.)
 
+
 ## Results
 I used VBA in excel to calculate trading activity and yearly returns. The dataset I used included two sheets for the years 2017 and 2018. The data included 12 clean energy stocks and was organized using these categories:
 
 <img src = "https://github.com/Kee2u/Stock-Analysis/blob/main/resources/Categories.png?raw=true" width = "500">
 
-1. I calculated trading activity for each stock (ticker) by adding their daily volume amounts.
-2. I calculated yearly returns for each stock(ticker) by calculating the percentage change in price over the year. I used the starting and ending closing price for this calculation.
+I quantified the performance of the stocks by:
+1. Calculating trading activity for each stock (ticker) by adding their daily volume amounts.
+2. Calculating yearly returns for each stock(ticker) by calculating the percentage change in price over the year. I used the starting and ending closing price for this calculation.
+
 
 ### Original Code
 
-I approached this problem by making an array for the tickers ( tickers(12) ). Then I created nested for loops to first go through all the rows in the table and perform the calculations for one ticker. Then it went to the next ticker and went through all the rows again. 
+Initially, I approached this problem by making an array for the tickers ( tickers(12) ). Then I created nested for loops to first go through all the rows in the table and perform the calculations for one ticker. Then it went to the next ticker and went through all the rows again. 
 
-Here is the code I used. The values of the ticker array was initalized with the values of all 12 tickers before these lines:
+**Here is the code I used. The values of the ticker array was initalized with the values of all 12 tickers before these lines:**
   
           'Loop through the tickers
              
@@ -68,8 +71,9 @@ Here is the code I used. The values of the ticker array was initalized with the 
               Cells(4 + i, 3).Value = endprice / startprice - 1
               
           Next i
- 
-The computation time for this code was 0.99s for 2017 and 0.8s for 2018:
+
+**Computation Time**
+  The computation time for this code was 0.99s for 2017 and 0.8s for 2018:
 
 <img src = "https://github.com/Kee2u/Stock-Analysis/blob/main/resources/Green_Stocks_2017.PNG?raw=true" width = "300">   <img src = "https://github.com/Kee2u/Stock-Analysis/blob/main/resources/Green_Stocks_2018.PNG?raw=true" width = "283">
 
@@ -80,7 +84,7 @@ I did this by updating the ticker once the code detected the ending price of the
 
 In addition to creating an array for the ticker index like before, I created arrays for ticker volumes, starting price and ending price.
 
-Here is the code I used. The values of the ticker array was initalized with the values of all 12 tickers before these lines:
+**Here is the code I used. The values of the ticker array was initalized with the values of all 12 tickers before these lines:**
   
     'Create a ticker Index
     
@@ -143,8 +147,5 @@ Here is the code I used. The values of the ticker array was initalized with the 
         
     Next i
     
-
-
-
 ### 2017 performance
 <img src ="https://github.com/Kee2u/Stock-Analysis/blob/main/resources/2017%20Stock%20Performance.png?raw=true" width = "500">
