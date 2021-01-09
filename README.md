@@ -18,6 +18,10 @@ I quantified the performance of the stocks by:
 1. Calculating trading activity for each stock (ticker) by adding their daily volume amounts.
 2. Calculating yearly returns for each stock(ticker) by calculating the percentage change in price over the year. I used the starting and ending closing price for this calculation.
 
+### 2017 performance
+
+In 2017, 
+<img src ="https://github.com/Kee2u/Stock-Analysis/blob/main/resources/2017%20Stock%20Performance.png?raw=true" width = "500">
 
 ### Original Code
 
@@ -147,5 +151,4 @@ In addition to creating an array for the ticker index like before, I created arr
         
     Next i
     
-### 2017 performance
-<img src ="https://github.com/Kee2u/Stock-Analysis/blob/main/resources/2017%20Stock%20Performance.png?raw=true" width = "500">
+
